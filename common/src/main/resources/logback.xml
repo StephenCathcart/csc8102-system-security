@@ -1,0 +1,12 @@
+<!-- Adapted reference: http://saltnlight5.blogspot.co.uk/2013/08/how-to-configure-slf4j-with-different.html-->
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>
